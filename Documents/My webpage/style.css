@@ -1,0 +1,140 @@
+body{
+    background: rgb(82, 148, 69);/*rgb(104, 103, 103);*/
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.container {
+    background: rgba(43, 43, 43, 0.959);
+    width: 75%;
+    height: 200%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0px rgb(0 0 0 / 80%);
+    border-radius: 10px;
+}
+#invisLine {
+    border: none;
+}
+.navBar {
+    margin-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+    height: 100px;
+    background: rgba(31, 30, 30, 0.781);
+    display: flex;
+    align-items: right;
+    margin-top: 2%;
+}
+.navBar #logo{
+    height: 110px;
+    width: 110px;
+    margin-top: -5px;
+    box-shadow: 0 0 10px 0px rgb(0 0 0 / 50%);
+    transition-duration: 500ms;
+    transition-property: all;
+}
+.navBar #logo:hover {
+    transform:scale(1.2);
+}
+.navBar #logoText {
+    margin-top: 2.5em;
+    margin-left: 3em;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    font-size: medium;
+    color: white;
+}
+#divider {
+    margin-top: 0.3em;
+    margin-left: 1em;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+}
+#navBarLine{
+    width: 70%;
+    margin-top: 2%;
+}
+.navBar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 10%;
+    position: relative;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color: f1f1f1;
+}
+.navBar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:rgb(104, 103, 103);
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 1s;
+}
+.navBar ul li:hover::after{
+    width: 100%;
+}
+.mainBody {
+    width: 70%;
+    margin: 0 auto;
+    height: 100px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+#title {
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: right;
+    font-size: 30px;
+}
+#title2 {
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: right;
+    font-size: 30px;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #454948;
+    background: transparent;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: absolute;
+    margin: 0 auto;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+button:hover {
+    border-color: #545555;
+}
+button:hover span{
+    width: 100%;
+}
+span {
+    background: #f1f1f1;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+}
